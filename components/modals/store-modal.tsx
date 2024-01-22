@@ -2,13 +2,14 @@
 
 import { Modal } from "@/components/ui/modal";
 import { useStoreModal } from "@/hooks/use-store-modal";
+import * as z from "zod";
 
 /**
  * Component representing a modal for creating a new store.
  * It utilizes the useStoreModal custom hook to manage modal state.
- *
- * @returns {JSX.Element} - JSX element representing the StoreModal component.
  */
+
+const formSchema = z;
 export const StoreModal = () => {
   // Using the useStoreModal hook to access modal state and functions.
   const storeModal = useStoreModal();
@@ -20,9 +21,8 @@ export const StoreModal = () => {
       description="Add a new Store to Start Business"
       isOpen={storeModal.isOpen}
       onClose={storeModal.onClose}
-    >
-      {/* Placeholder content for the future Create Store form. */}
-      Future Create Store form
-    </Modal>
+    ></Modal>
   );
 };
+
+109;
